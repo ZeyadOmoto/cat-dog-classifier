@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cat vs Dog Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cat vs Dog Image Classifier</h1>
+        <p>Upload an image of a cat or dog to classify it.</p>
+        
+        {% if error %}
+        <div class="error-message">
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
+        
+        <form class="upload-form" action="/predict" method="post" enctype="multipart/form-data">
+            <div class="file-input">
+                <input type="file" name="file" id="file" accept="image/*" required>
+                <label for="file" class="file-label">Choose an image</label>
+                <span id="file-name">No file chosen</span>
+            </div>
+            <button type="submit" class="btn">Classify Image</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

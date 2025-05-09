@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Classification Result</h1>
+        
+        <div class="image-container">
+            <img src="data:image/jpeg;base64,{{ result.image }}" alt="Uploaded Image">
+        </div>
+        
+        <div class="result">
+            <h2>This is a {{ result.prediction }}!</h2>
+            <p class="confidence">Confidence: {{ "%.2f"|format(result.confidence * 100) }}%</p>
+        </div>
+        
+        {% if result.error %}
+        <div class="error-message">
+            <p>Error: {{ result.error }}</p>
+        </div>
+        {% endif %}
+        
+        <a href="/" class="btn">Classify Another Image</a>
+    </div>
+</body>
+</html>

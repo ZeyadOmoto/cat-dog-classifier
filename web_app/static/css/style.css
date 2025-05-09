@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.upload-form {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.file-input {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.file-input input[type="file"] {
+    display: none;
+}
+
+.file-label {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.file-label:hover {
+    background-color: #2980b9;
+}
+
+#file-name {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.btn {
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+.error-message {
+    background-color: #ffecec;
+    color: #e74c3c;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.result {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #e8f6f3;
+    border-radius: 8px;
+}
+
+.result h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.confidence {
+    font-weight: bold;
+    color: #2874a6;
+    font-size: 18px;
+}
